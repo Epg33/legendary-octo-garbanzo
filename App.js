@@ -11,6 +11,8 @@ export default function App() {
 
   return (
     <NavigationContainer>
+      <StatusBar hidden />
+      <Text>Holi</Text>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name='Home' component={Home}/>
         <Stack.Screen name='Chats' component={Chats}/>
