@@ -12,8 +12,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <StatusBar hidden />
-      <Text>Holi</Text>
-      <Stack.Navigator initialRouteName='Home'>
+      <Stack.Navigator screenOptions={{
+          headerShown: false,
+          animation: 'slide_from_left',
+        }} initialRouteName='Home'>
         <Stack.Screen name='Home' component={Home}/>
         <Stack.Screen name='Chats' component={Chats}/>
       </Stack.Navigator>
