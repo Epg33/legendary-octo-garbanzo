@@ -5,7 +5,6 @@ export default function Home({navigation}) {
   return (
     <View>
       <Text>Home</Text>
-      <Button title='Chats' onPress={()=>navigation.navigate('Chats')}/>
     </View>
   )
 }
